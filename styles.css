@@ -1,0 +1,193 @@
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-bold {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: 'dongle-regular', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9f4;
+  color: #333;
+  cursor: url('tree1.cur'), auto;
+}
+
+header {
+  background-color: #888888;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+h1, h2, h3 {
+  font-family: 'Jua', sans-serif;
+}
+
+
+.subtitle {
+  font-family: 'dongle-bold', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+#green-world, #gray-world {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#green-world:hover, #gray-world:hover {
+  font-weight: 800;
+  color: purple;
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+.article {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 4px ridge #ccc;
+}
+
+.article h2 {
+  color: #1b5e20;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 5px ridge #999;
+}
+
+
+.article img:hover {
+  transform: scale(1.05);
+}
+
+.source {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: right;
+}
+
+.videos {
+  background-color: #e8f5e9;
+  border-radius: 10px;
+  padding: 1.5rem;
+
+}
+
+.videos h2 {
+  margin-top: 0rem;
+  color: #2e7d32;
+}
+
+.video-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* 동영상 사이 간격 */
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.video-group video {
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+
+
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+#form {
+  margin-top: 2rem;
+  display: block; 
+}
+
+#form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+#form-buttons button {
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* 입체 */
+  transform: translateY(0);
+}
+
+/* 마우스를 올렸을 때 튀어나오는 효과 */
+#form-buttons button:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px); /* 위로 살짝 뜨는 느낌 */
+}
+
+#survey-btn {
+  background-color: #2196f3;
+}
+
+#actions-btn {
+  background-color: #e53935;
+}
+
+#survey-form {
+  display: none; /* 초기에 숨김 */
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border: 2px dashed #2196f3;
+}
+
+#actions-list {
+  display: none; /* 초기에 숨김 */
+  background-color: #fff3e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border: 2px dashed #ff9800;
+}
+
+#actions-list ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
