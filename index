@@ -1,0 +1,124 @@
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기후 환경 뉴스</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Jua&display=swap');</style>
+   <script src="scripts.js" defer></script>
+</head>
+<body>
+ <header>
+    <h1>🌍 기후 위기 뉴스</h1>
+    <p class="subtitle">
+  <span id="gray-world">흑백세상에서</span>
+  <span id="green-world"> 녹색세상(클릭)으로</span>
+</p>
+  </header>
+  
+  <main>
+    <section class="article">
+      <h2>1980년대 이후 극심한 가뭄 지역 3배 넓어져 - 연구 결과</h2>
+      <p>
+        기후변화는 전 지구적 생태계에 심각한 영향을 미치고 있으며, 특히 가뭄 현상이 빠르게 확산되고 있다. 
+        최근 연구에 따르면, 1980년대 이후로 극심한 가뭄 지역의 면적이 무려 3배 이상 넓어졌다고 한다.
+        이는 농업 생산성과 식량 안보에 직접적인 위협이 되고 있으며, 전 세계적인 물 부족 현상도 가속화되고 있다. 
+        미국의 퍼시픽 노스웨스트, 호주 남동부, 브라질 북동부, 남아프리카 등 주요 지역들이 큰 피해를 입고 있다. 
+        특히 장기적인 강수량 감소와 지하수 고갈이 동시에 발생하면서 생태계 복원력마저 약화되고 있다. 
+        국제사회는 이를 해결하기 위해 보다 긴급하고 포괄적인 기후 대응 전략을 요구받고 있다.
+      </p>
+      <a href="https://www.bbc.com/korean/articles/ce8dypkxl8do#:~:text=1980" target="popup" onclick="window.open(this.href, 'popup', 'width=600,height=600,left=100,top=100'); return false;">
+        <img src="images/drought.jpg" alt="가뭄 이미지" class="hover-effect ridge-border">
+      </a>
+	   <p class="source">출처(이미지 클릭): BBC 코리아 (2024년 11월 2일)</p>
+    </section>
+
+    <section class="article">
+      <h2>기후변화로 2030년 최소 25만명 초과 사망 예상</h2>
+      <p>
+        세계보건기구(WHO)의 예측에 따르면, 기후변화는 단지 환경 문제를 넘어 인류 건강에도 막대한 위협이 되고 있다. 
+        영양실조, 말라리아, 열 스트레스와 같은 질병이 기후변화로 인해 더욱 악화될 것으로 전망된다. 
+        특히 취약 계층과 개발도상국의 피해가 집중될 것으로 예상되며, 이에 대한 국제사회의 관심과 대응이 절실하다. 
+        WHO는 2030년부터 매년 최소 25만 명이 이로 인해 사망할 수 있다고 경고하고 있다. 
+        기후 위기는 의료 시스템의 부담을 증가시키고, 동시에 사회적 불평등을 심화시킬 수 있는 요인이기도 하다. 
+        따라서 지금 당장 온실가스 감축 및 기후 적응 정책의 강화가 필요한 시점이다.
+      </p>
+      <a href="https://www.hkbs.co.kr/news/articleView.html?idxno=755520#:" target="popup" onclick="window.open(this.href, 'popup2', 'width=600,height=600,left=750,top=100'); return false;">
+        <img src="images/pollution.jpg" alt="대기오염 이미지" class="hover-effect ridge-border">
+      </a>
+	  <p class="source">출처(이미지 클릭): 환경일보</p>
+    </section>
+
+<section class="videos">
+  <h2>관련 동영상</h2>
+<br>
+  <div class="video-group">
+    <video controls>
+      <source src="https://videos.pexels.com/video-files/3547109/3547109-sd_640_360_30fps.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+    <video controls>
+      <source src="https://videos.pexels.com/video-files/2034291/2034291-sd_640_360_24fps.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+  </div>
+
+  <div class="video-group">
+    <video controls>
+      <source src="https://videos.pexels.com/video-files/8365989/8365989-sd_640_360_30fps.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+    <video controls>
+      <source src="https://videos.pexels.com/video-files/10177347/10177347-sd_960_506_30fps.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+  </div>
+</section>
+
+	 <section id="form">
+	 <div id="form-buttons">
+  <button id="survey-btn">의견내기</button>
+  <button id="actions-btn">환경을 위해 할수 있는 리스트</button>
+</div>
+	  
+	    <div id="survey-form">
+      <h3>당신의 의견을 들려주세요</h3>
+      <form onsubmit="subscribeAlert(); return false;">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="topic">관심 주제:</label>
+        <select id="topic" name="topic">
+          <option value="drought">가뭄</option>
+          <option value="pollution">대기오염</option>
+          <option value="climate">기후변화</option>
+        </select><br><br>
+
+        <label for="opinion">의견:</label><br>
+        <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="제출">
+      </form>
+	  </div>
+	  
+	  <div id="actions-list" >
+        <h3>환경을 위해 할 수 있는 일</h3>
+        <ul>
+          <li>- 재활용하기</li>
+          <li>- 물 아껴쓰기</li>
+          <li>- 전기 절약하기</li>
+          <li>- 대중교통 이용하기</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>손정인(202311552)- HTML 환경문제뉴스홈페이지</p>
+  </footer>
+</body>
+</html>
